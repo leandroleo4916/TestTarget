@@ -1,3 +1,7 @@
+package com.example.testestarget
+
+import java.sql.DriverManager.println
+
 fun main() {
     
     val numIn = 378
@@ -22,5 +26,26 @@ fun main() {
     else {
         println("$numIn não faz parte do Fibonacci")
     }
+    
+    val calculo = MainCalculos()
+    calculo.addValue()
+
+    val calculoMenor = calculo.calculaMenor()
+    val calculoMaior = calculo.calculaMaior()
+    val calculoMedia = calculo.calculaMedia()
+    val percentualSp = calculo.percentualSp()
+    val percentualRj = calculo.percentualRj()
+    val percentualMg = calculo.percentualMg()
+    val percentualEs = calculo.percentualEs()
+    val percentualOutros = calculo.percentualOutros()
+
+    println("$calculoMenor")
+    println("$calculoMaior")
+    println("$calculoMedia")
+    println("$percentualSp")
+    println("$percentualRj")
+    println("$percentualMg")
+    println("$percentualEs")
+    println("$percentualOutros")
     
 }
